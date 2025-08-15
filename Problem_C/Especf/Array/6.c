@@ -10,3 +10,29 @@ Input: 3, 7, 2, 9, 5
 
 Output: Maior elemento = 9
 */
+
+#include <stdio.h>
+
+int maiorElemento(int array[5]) {
+    int maior = array[0]; 
+    for (int i = 1; i < 5; i++) {
+        if (array[i] > maior) {
+            maior = array[i];
+        }
+    }
+    return maior;
+}
+
+int main() {
+    int numeros[5];
+
+    printf("Digite 5 numeros inteiros:\n");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &numeros[i]);
+    }
+
+    int resultado = maiorElemento(numeros);
+    printf("Maior elemento = %d\n", resultado);
+
+    return 0;
+}
