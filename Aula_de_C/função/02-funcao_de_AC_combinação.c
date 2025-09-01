@@ -16,9 +16,9 @@ int main(){
     printf("Digite o valor de P: ");
     scanf("%d", &P);
 
-    if (P > N || N < 0 || P < 0){
+    if (P > N){
         printf("Valores inválidos. Lembre-se que P ≤ N e ambos ≥ 0.\n");
-        return 1;
+        return 0;
     }
 
     int resultado = factorial(N) / ( factorial(P) * factorial(N - P) );
