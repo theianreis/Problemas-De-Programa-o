@@ -7,7 +7,6 @@ int pot(int base, int exp){
     else{
         return base*pot(base,exp-1);
     }
-    
 }
 
 int main(){
