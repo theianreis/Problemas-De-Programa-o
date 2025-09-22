@@ -1,0 +1,11 @@
+# Alocação Estática
+- Ocorre em tempo de compilação
+- Quantidade de memória é fixada antes da exe do Problemas_de_Programação
+
+# Alocação dinâmica
+Ocorre em tempo de execução.
+-Usa funções da biblioteca <stdlib.h>:
+-malloc() → aloca memória sem inicializar
+-calloc() → aloca memória e inicializa com zero
+-realloc() → redimensiona memória já alocada
+-free() → libera memória alocada
