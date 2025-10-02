@@ -1,25 +1,26 @@
+/* informações:
+Problema: Declarar uma variável inteira, um ponteiro para inteiro e exibir o valor, 
+          o endereço e o valor acessado via ponteiro.
+Input: Nenhum (valor da variável é fixo no código).
+Caso necessário: Não há fórmula matemática.
+Output: Valor da variável, endereço de memória e valor acessado pelo ponteiro.
+*/
+
 #include <stdio.h>
 
+
 int main(){
+    int variable;
+    int *p;
 
-    float fpt;
-    float variavel_1, variavel_2;
+    printf("write a value: ");
+    scanf("%d", &variable);
 
-    float *p_fpt;
+    p = &variable; 
 
-    p_fpt = &fpt;
-    variavel_1 = 10.5;
-    *p_fpt = variavel_1; 
-    
-    // Atribuir o valor de fpt (via ponteiro) a variavel_2
-    variavel_2 = *p_fpt;
-
-    printf("Valor apontado pelo ponteiro: %.2f\n", *p_fpt);
-    printf("Valor de variavel_1: %.2f\n", variavel_1);
-    printf("Valor de variavel_2: %.2f\n", variavel_2);
-    printf("Endereço armazenado na varivael_1: %p\n", &variavel_1);
-    printf("Endereço armazenado no ponteiro: %p\n", p_fpt);
-
+    printf("X values: %d",variable);
+    printf("\nX address: %p",&variable);
+    printf("\nValue accessed by: %d",*p);
 
     return 0;
 }
